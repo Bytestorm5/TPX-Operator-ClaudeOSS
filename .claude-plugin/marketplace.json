@@ -1,0 +1,15 @@
+{
+  "name": "trusplex",
+  "description": "Trusplex plugins for Claude Code.",
+  "owner": {
+    "name": "Trusplex",
+    "url": "https://trusplex.com"
+  },
+  "plugins": [
+    {
+      "name": "tpx-operator",
+      "source": "./",
+      "description": "Your servers as named remote terminals: Claude operates them from your machine over SSH and SFTP."
+    }
+  ]
+}

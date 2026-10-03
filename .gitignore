@@ -1,0 +1,3 @@
+node_modules/
+# laid by Claude Code beside a mod it loads from disk
+.claude-plugin/types/

@@ -1,0 +1,32 @@
+{
+  "name": "tpx-operator",
+  "version": "0.1.0",
+  "description": "TPX Operator for Claude Code: add your servers as named remote terminals (SSH key), and Claude operates them from your machine over SSH and SFTP — commands, files, uploads and downloads, restarts and persistent memory.",
+  "author": { "name": "Trusplex", "url": "https://trusplex.com" },
+  "homepage": "https://github.com/Bytestorm5/TPX-Operator-ClaudeOSS",
+  "repository": "https://github.com/Bytestorm5/TPX-Operator-ClaudeOSS",
+  "license": "MIT",
+  "keywords": ["ssh", "sftp", "ops", "servers", "remote", "trusplex"],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "confirmDestructive": {
+      "type": "boolean",
+      "title": "Confirm destructive actions",
+      "description": "Ask before delete_file and restart_server run, as TPX Operator does.",
+      "default": true
+    },
+    "hostKeyChecking": {
+      "type": "string",
+      "title": "Host key checking",
+      "description": "accept-new trusts a server's key the first time and refuses a changed one; yes accepts only keys already in known_hosts; no checks nothing.",
+      "options": ["accept-new", "yes", "no"],
+      "default": "accept-new"
+    },
+    "connectTimeoutSeconds": {
+      "type": "number",
+      "title": "Connect timeout (seconds)",
+      "description": "How long ssh and sftp wait for a server to answer.",
+      "default": 15
+    }
+  }
+}

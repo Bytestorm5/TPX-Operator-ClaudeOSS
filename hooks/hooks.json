@@ -1,0 +1,4 @@
+{
+  "description": "TPX Operator: /tpx and the Operator pane, the remote-terminal tools served over ssh and sftp, and the system prompt's list of terminals and memory",
+  "modules": ["./register.tsx"]
+}
